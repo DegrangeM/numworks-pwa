@@ -26,7 +26,14 @@ window.addEventListener('load', function () {
         }
     });
 
-    timeout = setTimeout(function(){
+    timeout = setTimeout(function () {
         document.getElementsByTagName('button')[0].textContent = "Navigateur incompatible ou application déjà installée";
     }, 5000);
+
+});
+
+window.addEventListener('DOMContentLoaded', function () {
+
+    window.resizeTo(parseInt(document.getElementsByTagName('iframe')[0].offsetHeight * 1160 / 2220), window.outerHeight);
+
 });
