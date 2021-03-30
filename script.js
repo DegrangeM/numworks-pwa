@@ -34,6 +34,8 @@ window.addEventListener('load', function () {
 
 window.addEventListener('DOMContentLoaded', function () {
 
-    window.resizeTo(parseInt(document.getElementsByTagName('iframe')[0].offsetHeight * 1160 / 2220), window.outerHeight);
+    let overHeight = window.outerHeight - document.getElementsByTagName('iframe')[0].offsetHeight;
+
+    window.resizeTo(parseInt((screen.availHeight - overHeight) * 1160 / 2220), screen.availHeight);
 
 });
