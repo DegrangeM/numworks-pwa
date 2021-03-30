@@ -6,11 +6,11 @@
 	"display": "standalone",
 	"icons": [
 	{
-		"src": "favicon.ico",
+		"src": "numworks/favicon.ico",
 		"sizes": "16x16"
 	},
 	{
-		"src": "favicon.png",
+		"src": "numworks/favicon.png",
 		"sizes": "200x200"
 	}
 	]

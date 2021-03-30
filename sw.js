@@ -6,11 +6,11 @@ self.addEventListener('install', (event) => {
             return cache.addAll([
                 './',
                 './index.html',
-                './simulator.html',
-                './epsilon.js',
-                './background.jpg',
-                './favicon.ico',
-                './favicon.png',
+                './simulator/simulator.html',
+                './simulator/epsilon.js',
+                './simulator/background.jpg',
+                './numworks/favicon.ico',
+                './numworks/favicon.png',
             ]);
         })
     );
@@ -32,9 +32,9 @@ self.addEventListener('fetch', (e) => {
 self.addEventListener('activate', (e) => {
     e.waitUntil((async () => {
         const keyList = await caches.keys();
-        await Promise.all(keyList.map((key) => {
+        await Promise.all(keyList.map(async (key) => {
             if (key === cacheName) { return; }
             await caches.delete(key);
-        }))
+        }));
     })());
 });
