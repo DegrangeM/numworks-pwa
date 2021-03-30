@@ -10,6 +10,4 @@ Pour fonctionner, un dossier "simulator" contenant l'émulateur numworks est né
 
 Les fichiers pour créer la progressive web app (c'est à dire les fichiers à la racine) sont sous licence MIT.
 
-Pour le contenu des dossiers `numworks` et `simulator` :
-
-NumWorks Epsilon is released under a CC BY-NC-SA License. NumWorks is a registered trademark.
+Pour le contenu des dossiers `numworks` et `simulator` : _NumWorks Epsilon is released under a CC BY-NC-SA License. NumWorks is a registered trademark._
